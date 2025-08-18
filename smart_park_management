@@ -1,0 +1,70 @@
+class Car:
+    def __init__(self, plate):
+        self.plate = plate
+        self.next = None
+
+
+class ParkingLot:
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.count = 0
+        self.head = None
+
+    def park_car(self, plate):
+        if self.count >= self.capacity:
+            print(f"⚠️ Parking Full! Car {plate} denied entry.")
+            return
+        new_car = Car(plate)
+        new_car.next = self.head
+        self.head = new_car
+        self.count += 1
+        print(f"+ Car {plate} Entered")
+
+    def exit_car(self, plate):
+        if not self.head:
+            print("⚠️ Parking Lot Empty!")
+            return
+        prev = None
+        curr = self.head
+        while curr:
+            if curr.plate == plate:
+                if prev:
+                    prev.next = curr.next
+                else:
+                    self.head = curr.next
+                self.count -= 1
+                print(f"- Car {plate} Exited")
+                return
+            prev = curr
+            curr = curr.next
+        print(f"❌ Car {plate} not found!")
+
+    def status(self):
+        print("\n🅿️ Parking Lot Status")
+        print(f"Capacity : {self.capacity}")
+        print(f"Occupied : {self.count}")
+        print(f"Available: {self.capacity - self.count}")
+        print("Cars Inside:", end=" ")
+        if not self.head:
+            print("None")
+        else:
+            curr = self.head
+            while curr:
+                print(curr.plate, end=" → ")
+                curr = curr.next
+            print("END")
+
+
+# Demo
+if __name__ == "__main__":
+    lot = ParkingLot(3)
+
+    lot.park_car("KA-05-1234")
+    lot.park_car("MH-10-5678")
+    lot.park_car("DL-08-4321")
+    lot.park_car("GJ-01-9999")  # Overflow
+    lot.status()
+
+    lot.exit_car("MH-10-5678")
+    lot.exit_car("UP-22-1111")  # Not found
+    lot.status()
