@@ -70,3 +70,5 @@ if __name__ == "__main__":
 
     lot.leave_car("MH12XY9999")
     lot.status()
+
+    demo2.png
