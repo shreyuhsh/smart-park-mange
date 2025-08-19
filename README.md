@@ -1,36 +1,29 @@
+# Smart Parking Management System
 
-# 🅿️ Smart Parking Lot Management  
-
-*A dynamic, real-time parking system built with linked lists.*  
-
----
-
-## ✨ Features  
-- 🚗 Track active parked cars  
-- 🆓 Allocate/free slots dynamically  
-- ⚠️ Prevent overflow when full  
-- 🔍 Search vehicles by plate number  
+## ✨ Features
+- Add and remove parked vehicles  
+- Track available and occupied slots in real-time  
+- Calculate parking fees automatically  
+- Search vehicle records by number plate  
+- Simple CLI interface  
 
 ---
 
-## ⚙️ Tech Stack  
-- **Language**: Python 3  
-- **Core Structures**: Linked List  
-- **Concepts**: Dynamic Memory Allocation, Real-Time Tracking  
+## 🚀 Tech
+- **Language:** Python  
+- **Data Structures:** Queues, Dictionaries  
+- **Concepts:** Slot Allocation, Searching, File Handling  
 
 ---
 
-## 🚀 Run  
+## ⚡ Quick Start
 
 ```bash
-Smart-Parking-Lot/
-│── src/
-│   └── parking.py
-│── README.md
+# Clone this repository
+git clone https://github.com/your-username/smart-parking.git
 
+# Navigate to project folder
+cd smart-parking
 
-cd src
-python parkinglot.py
----
-
-
+# Run the program
+python parking.py
