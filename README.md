@@ -30,10 +30,11 @@ Smart-Parking-Lot/
 
 cd src
 python parkinglot.py
-
+---
 ## 📸 Snapshot
 
 Here is a sample output:
 
-![Parking Demo](screenshots/demo2.png)
+![Parking Demo](screenshots/demo.png)
+
 
