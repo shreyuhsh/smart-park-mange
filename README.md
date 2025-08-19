@@ -25,9 +25,9 @@ git clone https://github.com/your-username/smart-parking.git
 # Navigate to project folder
 cd smart-parking
 ---
-- `![Demo Screenshot](demo2.png)` → shows image inside README.  
-- Wrapping it like `[![Demo Screenshot](demo2.png)](demo2.png)` → makes it **clickable** (enlarges on click).  
-- [`parking.py`](parking.py) → makes your Python file **clickable**.  
+- `![Demo Screenshot](demo2.png)`
+- Wrapping it like `[![Demo Screenshot](demo2.png)](demo2.png)`  
+- [`parking.py`](parking.py)   
 ---
 # Run the program
 python parking.py
