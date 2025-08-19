@@ -33,6 +33,6 @@ python parkinglot.py
 ---
 ## 📸 Snapshot
 
-![Parking Demo](images/demo2.png)
+![Parking Demo](demo2.png)
 
 
