@@ -27,12 +27,10 @@ Smart-Parking-Lot/
 │── src/
 │   └── parking.py
 │── README.md
+ demo2.png
 
 cd src
 python parkinglot.py
 ---
-## 📸 Snapshot
-
-![Parking Demo](demo2.png)
 
 
