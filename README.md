@@ -25,8 +25,8 @@
 ```bash
 Smart-Parking-Lot/
 │── src/
-│   └── parking_lot.py
+│   └── parking.py
 │── README.md
 
 cd src
-python parking_lot.py
+python parkinglot.py
