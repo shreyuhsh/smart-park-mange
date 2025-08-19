@@ -35,6 +35,6 @@ python parkinglot.py
 
 Here is a sample output:
 
-![Parking Demo](screenshots/demo.png)
+![Parking Demo](screenshots/demo2.png)
 
 
