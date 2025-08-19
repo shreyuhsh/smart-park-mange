@@ -1,4 +1,4 @@
-# smart-park-mange
+
 # 🅿️ Smart Parking Lot Management  
 
 *A dynamic, real-time parking system built with linked lists.*  
